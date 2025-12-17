@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Digital Skills Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background: #f6f7fb;
+      color: #111;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 24px 16px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: #ddd;
+    }
+
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 16px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      margin-right: 14px;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 18px 16px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 8px 0 0 18px;
+    }
+
+    .imgbox {
+      border: 2px dashed #bbb;
+      border-radius: 10px;
+      padding: 18px;
+      text-align: center;
+      color: #555;
+      background: #fafafa;
+      margin-top: 10px;
+    }
+
+    footer {
+      padding: 20px 16px;
+      text-align: center;
+      color: #666;
+    }
+
+    .small {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .carousel-container {
+      position: relative;
+      max-width: 800px;
+      margin: 20px auto;
+      background: #f8f9fa;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      background: #f8f9fa;
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      flex-shrink: 0;
+      position: relative;
+      background: #f8f9fa;
+    }
+
+    .carousel-slide img,
+    .carousel-slide video {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+      background: #f8f9fa;
+      display: block;
+    }
+
+    .rotate-landscape {
+      transform: rotate(90deg);
+      width: auto;
+      height: 100%;
+      max-height: 400px;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      pointer-events: none;
+    }
+
+    .carousel-btn {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      cursor: pointer;
+      pointer-events: all;
+      transition: background 0.3s;
+    }
+
+    .carousel-btn:hover {
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .carousel-indicators {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+    }
+
+    .indicator {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .indicator.active {
+      background: white;
+    }
+
+    .media-counter {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap">
+      <h1>My Applied Digital Skills Portfolio</h1>
+      <p>Quick portfolio with weekly topics, skills, and 5 examples with reflections.</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#weeks">Weekly Topics</a>
+    <a href="#examples">5 Examples</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="wrap">
+
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p class="small">
+        I created this portfolio to show what I learned in Applied Digital Skills.
+        Scroll through the gallery to see every media artefact captured during the course.
+      </p>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="carousel-slide current-slide">
+            <div class="media-counter">1/8</div>
+            <video controls>
+              <source src="videointro.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="carousel-slide">
+            <div class="media-counter">2/8</div>
+            <img src="z7338104722757_44691dcc2e713151a76d12f1900309f4.jpg" alt="Media 2">
+          </div>
+          <div class="carousel-slide">
+            <div class="media-counter">3/8</div>
+            <img src="z7338104747101_2dea6bc97162dd6c801052999d51bec0.jpg" alt="Media 3">
+          </div>
+          <div class="carousel-slide">
+            <div class="media-counter">4/8</div>
+            <img src="z7338104780946_bb62046729adfb4e04f0b3c79419191a.jpg" alt="Media 4" class="rotate-landscape">
+          </div>
+          <div class="carousel-slide">
+            <div class="media-counter">5/8</div>
+            <img src="z7338104798913_62e38540038aabab513fd067175c8425.jpg" alt="Media 5">
+          </div>
+          <div class="carousel-slide">
+            <div class="media-counter">6/8</div>
+            <img src="z7338104814225_8c7eec916598d9992842818be70d32d2.jpg" alt="Media 6">
+          </div>
+          <div class="carousel-slide">
+            <div class="media-counter">7/8</div>
+            <img src="z7338108853263_5210f0ed88a617155ff06b953bef2655.jpg" alt="Media 7">
+          </div>
+          <div class="carousel-slide">
+            <div class="media-counter">8/8</div>
+            <img src="z7338111387772_0a7e406f638fa6d41415199ced723b0d.jpg" alt="Media 8">
+          </div>
+
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev">&#60;</button>
+          <button class="carousel-btn next">&#62;</button>
+        </div>
+        <div class="carousel-indicators">
+          <div class="indicator active" data-index="0"></div>
+          <div class="indicator" data-index="1"></div>
+          <div class="indicator" data-index="2"></div>
+          <div class="indicator" data-index="3"></div>
+          <div class="indicator" data-index="4"></div>
+          <div class="indicator" data-index="5"></div>
+          <div class="indicator" data-index="6"></div>
+          <div class="indicator" data-index="7"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>Communication and collaboration (Teams / SharePoint)</li>
+        <li>Excel basics (clean data, formatting, validation)</li>
+        <li>Excel functions (IF, XLOOKUP, SUMIFS)</li>
+        <li>PivotTables (summaries, filters, insights)</li>
+        <li>Digital content creation (simple design for clarity)</li>
+        <li>Digital safety and literacy (secure habits, risk awareness)</li>
+      </ul>
+    </section>
+
+    <section id="weeks" class="card">
+      <h2>Weekly Topics</h2>
+      <ul>
+        <li>Week 1: Introduction</li>
+        <li>Week 2: Communication / Teams / SharePoint</li>
+        <li>Week 3: Excel Basics</li>
+        <li>Week 4: Excel Functions</li>
+        <li>Week 5: PivotTables</li>
+        <li>Week 6: Study Week & Mock Test</li>
+        <li>Week 8: Creating Digital Content</li>
+        <li>Week 9: Emerging Technologies</li>
+        <li>Week 10: Computer Safety & Literacy</li>
+        <li>Week 11: Physical, Social, & Environmental Risks</li>
+      </ul>
+    </section>
+
+    <section id="examples" class="card">
+      <h2>5 Examples (Evidence + Reflection)</h2>
+      <p class="small">Replace each “Screenshot here” box with your own image or keep it as evidence space.</p>
+
+      <div class="card">
+        <h3>Example 1: Teams + SharePoint collaboration</h3>
+        <p><b>Evidence:</b> screenshot of channels, shared files, or folder structure.</p>
+        <div class="imgbox">Screenshot here</div>
+        <p><b>Reflection (about 200 words):</b> I learned that collaboration works best when the team has a clear
+          structure.
+          In Teams, creating separate spaces for chat, tasks, and final decisions reduced confusion. Using SharePoint
+          for files
+          helped avoid multiple versions being sent as attachments. I also understood how naming files and saving them
+          in the
+          right folder makes work easier to find later. A key takeaway was that version history and permissions are
+          important:
+          they protect files and show what changed. In a workplace, this supports accountability and makes handovers
+          smoother.
+          Overall, this example shows how I can use collaboration tools in a professional way, not just for messaging.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Example 2: Excel basics (clean and organised data)</h3>
+        <p><b>Evidence:</b> screenshot of your dataset before/after cleaning.</p>
+        <div class="imgbox">Screenshot here</div>
+        <p><b>Reflection (about 200 words):</b> This task taught me that good spreadsheets start with clean data.
+          When headings are clear and each column has one meaning, formulas and filters work properly. I practised
+          formatting,
+          consistent data types (numbers, dates), and simple validation to prevent mistakes. I realised that many Excel
+          errors
+          happen because data is messy, not because the math is difficult. In a workplace setting, a tidy spreadsheet
+          saves
+          time and makes it easier for another person to understand the file. This skill supports reliable reporting and
+          better decision-making.</p>
+      </div>
+
+      <div class="card">
+        <h3>Example 3: Excel functions (IF / XLOOKUP / SUMIFS)</h3>
+        <p><b>Evidence:</b> screenshot showing formulas and outputs.</p>
+        <div class="imgbox">Screenshot here</div>
+        <p><b>Reflection (about 200 words):</b> Using functions helped me turn raw data into useful information.
+          IF statements allowed me to label results automatically. XLOOKUP helped me pull correct details from a
+          reference
+          table without retyping. SUMIFS helped me total values based on conditions. The main lesson was that Excel can
+          behave
+          like a small system when formulas are planned properly. In a workplace, this reduces manual work and improves
+          consistency because the same rule is applied every time. I also learned to check formulas with test examples
+          to make
+          sure results are correct.</p>
+      </div>
+
+      <div class="card">
+        <h3>Example 4: PivotTables (fast summaries and insights)</h3>
+        <p><b>Evidence:</b> screenshot of PivotTable and filters/slicers.</p>
+        <div class="imgbox">Screenshot here</div>
+        <p><b>Reflection (about 200 words):</b> PivotTables helped me summarise data quickly without building many
+          formulas.
+          I could compare categories, see totals, and filter results to answer questions faster. I learned that
+          PivotTables
+          are useful for reporting because the same dataset can create different views. Adding filters made the report
+          easier
+          to use. In a workplace, PivotTables support quick analysis for meetings, performance tracking, and
+          decision-making.
+          This example shows my ability to create a clear summary from a larger dataset.</p>
+      </div>
+
+      <div class="card">
+        <h3>Example 5: Digital content + safety (responsible use)</h3>
+        <p><b>Evidence:</b> screenshot of your content (poster/infographic) or safety checklist.</p>
+        <div class="imgbox">Screenshot here</div>
+        <p><b>Reflection (about 200 words):</b> Creating digital content taught me to communicate clearly using layout,
+          headings, and spacing. I learned that design is about making information easy to understand, not just making
+          it look
+          nice. The safety topics helped me think about risks such as phishing, weak passwords, unsafe downloads, and
+          privacy.
+          I also considered physical and social risks, like leaving devices unlocked or sharing information too widely.
+          In a
+          workplace, these habits protect data and improve professionalism. This example shows that I can create useful
+          digital content while also working safely and responsibly online.</p>
+      </div>
+
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p class="small">
+        Name: Your Name<br>
+        Email: your.email@example.com<br>
+        Course: Applied Digital Skills
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    <div>Simple HTML portfolio | No coding experience needed</div>
+  </footer>
+
+</body>
+<script src="carousel.js"></script>
+
+</html>
